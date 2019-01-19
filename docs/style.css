@@ -1,5 +1,5 @@
 html {
-	font-family: Arial;
+	font-family: 'Roboto', sans-serif;
 }
 
 a, img, p, h1, h2, h3 {
@@ -12,15 +12,12 @@ a {
 	color: inherit;
 	text-decoration: none;
 	transition:background-color 350ms ease-out, color 350ms ease-out;
-	padding: 5px;
-}
-
-a:hover {
-	color: #FFF;
-	background-color: #000;
 }
 
 .App {
+	background: url('assets/biche.jpg');
+	background-position: center center;
+	background-size: cover;
 	position:absolute;
 	left:0;
 	top:0;
@@ -30,24 +27,39 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: stretch;
+	align-items: center;
 }
 
-.AppHeader {
-	margin: 0 10px;
+.AppContact {
+	letter-spacing: 5px;
+	display: inline-block;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2vw;
+	padding: 10px;
+	border:1px solid #FFF;
 }
 
-.AppHeaderTitle {
+.AppContact:hover {
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.AppTitle {
+	letter-spacing: 10px;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 15vw;
-	font-weight: bold;
 }
 
-.AppHeaderMenu {
-	margin-top: 20px;
+.AppBaseline {
+	letter-spacing: 5px;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 4vw;
-	font-weight: bold;
+	font-size: 3vw;
 }
